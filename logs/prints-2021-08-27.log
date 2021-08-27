@@ -1,0 +1,9 @@
+01:58:02.334 [main] INFO  config.Log - Driver is initializing
+01:58:11.314 [main] INFO  config.Log - openUrl Started
+01:58:11.314 [main] INFO  config.Log - null
+01:58:13.034 [main] INFO  config.Log - openUrl Passed
+01:58:13.042 [main] INFO  config.Log - Failed because of - java.lang.NullPointerException
+01:58:13.596 [main] INFO  config.Log - validateTitle Started
+01:58:13.596 [main] INFO  config.Log - null
+01:58:13.662 [main] INFO  config.Log - validateTitle Passed
+01:58:13.689 [main] INFO  config.Log - Failed because of - java.lang.NullPointerException
