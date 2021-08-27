@@ -3,13 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Test.GetQueryTest1">
+      <class name="Test.ClickAndSearch">
         <methods>
-          <include name="setup"/>
+          <include name="click"/>
           <include name="close"/>
-          <include name="ClickOnButton"/>
+          <include name="init"/>
+          <include name="search"/>
         </methods>
-      </class> <!-- Test.GetQueryTest1 -->
+      </class> <!-- Test.ClickAndSearch -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -7,22 +7,32 @@ import org.testng.annotations.Test;
 import baseFile.TestBase;
 import config.Log;
 import pages.HomePage;
+import pages.LoginPage;
 
-public class GetQueryTest extends TestBase{
+public class ClickAndSearchTest extends TestBase{
 
+	LoginPage login;
 	HomePage home;
 	
 	@BeforeClass
-	public void setup()
+	public void init()
 	{
 		initializeDriver();
-		Log.info("Driver is initializing");
+		Log.info("Driver is initialzed");
 		driver.get("https://www.google.com");
 		home=new HomePage();
+		login = new LoginPage();
 	}
 	
-	@Test
-	public void ClickOnButton()
+	@Test(priority=1)
+	public void search()
+	{
+		Log.info("Searching");		
+		login.search("quora");
+	}
+	
+	@Test(priority=2)
+	public void click()
 	{
 		Log.info("Clicking");
 		home.ClickOnButton();
@@ -31,7 +41,8 @@ public class GetQueryTest extends TestBase{
 	@AfterClass
 	public void close()
 	{
-		Log.info("Driver is close");
+		Log.info("Closing browser");
 		driver.quit();
 	}
+	
 }

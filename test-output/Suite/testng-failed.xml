@@ -13,14 +13,6 @@
           <include name="ClickOnButton"/>
         </methods>
       </class> <!-- Test.GetQueryTest -->
-      <class name="Test.HomePageTest">
-        <methods>
-          <include name="set"/>
-          <include name="openUrl"/>
-          <include name="validateTitle"/>
-          <include name="close"/>
-        </methods>
-      </class> <!-- Test.HomePageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -8,6 +8,7 @@
     <classes>
       <class name="Test.HomePageTest"/>
       <class name="Test.GetQueryTest"/>
+      <class name="Test.ClickAndSearchTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

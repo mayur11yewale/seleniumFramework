@@ -10,6 +10,6 @@ public class HomePage extends TestBase{
 	
 	public void ClickOnButton()
 	{
-		driver.findElement(searchButton).click();
+		driver.findElement(searchButton);
 	}
 }

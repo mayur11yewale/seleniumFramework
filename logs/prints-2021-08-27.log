@@ -1,9 +1,9 @@
-01:58:02.334 [main] INFO  config.Log - Driver is initializing
-01:58:11.314 [main] INFO  config.Log - openUrl Started
-01:58:11.314 [main] INFO  config.Log - null
-01:58:13.034 [main] INFO  config.Log - openUrl Passed
-01:58:13.042 [main] INFO  config.Log - Failed because of - java.lang.NullPointerException
-01:58:13.596 [main] INFO  config.Log - validateTitle Started
-01:58:13.596 [main] INFO  config.Log - null
-01:58:13.662 [main] INFO  config.Log - validateTitle Passed
-01:58:13.689 [main] INFO  config.Log - Failed because of - java.lang.NullPointerException
+22:07:10.648 [main] INFO  config.Log - null
+22:07:12.237 [main] INFO  config.Log - validateTitle Passed
+22:07:23.442 [main] INFO  config.Log - Driver is initializing
+22:07:32.961 [main] INFO  config.Log - ClickOnButton Started
+22:07:32.961 [main] INFO  config.Log - null
+22:07:32.962 [main] INFO  config.Log - Clicking
+22:07:32.997 [main] INFO  config.Log - ClickOnButton Passed
+22:07:32.998 [main] INFO  config.Log - Driver is close
+22:07:41.878 [main] INFO  config.Log - Driver is initialzed

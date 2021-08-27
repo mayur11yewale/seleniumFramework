@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.core.Logger;
+import org.testng.Assert;
 import org.testng.AssertJUnit;
 import baseFile.TestBase;
 import config.Log;
@@ -19,22 +20,20 @@ public class HomePageTest extends TestBase{
 		initializeDriver();
 		Log.info("Driver is initializing");
 		driver.get("https://www.google.com");
-		
+		login = new LoginPage();
 	}
 	
-	@Test(priority=1)
+	@Test()
 	public void openUrl()
 	{
-		//driver=initializeDriver();	
-		login = new LoginPage();
+		//driver=initializeDriver();
 		login.search("mkm");
-		
 	}
 	
-	@Test(priority=3)
+	@Test()
 	public void validateTitle()
 	{
-		AssertJUnit.assertEquals(login.title(), "Google");
+		Assert.assertEquals(login.title(), "Google");
 	}
 	
 	/*@Test(priority=2,dataProvider="data",dataProviderClass=SearchData.class)
