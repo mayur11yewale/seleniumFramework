@@ -18,7 +18,7 @@ public class HomePageTest extends TestBase{
 	public void set()
 	{
 		initializeDriver();
-		Log.info("Driver is initializing");
+		//Log.info("Driver is initializing");
 		driver.get("https://www.google.com");
 		login = new LoginPage();
 	}
@@ -33,7 +33,7 @@ public class HomePageTest extends TestBase{
 	@Test()
 	public void validateTitle()
 	{
-		Assert.assertEquals(login.title(), "Google");
+		Assert.assertEquals(login.title(), "Googlemm");
 	}
 	
 	/*@Test(priority=2,dataProvider="data",dataProviderClass=SearchData.class)

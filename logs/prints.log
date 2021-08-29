@@ -1,10 +1,7 @@
-22:07:55.240 [main] INFO  config.Log - search Started
-22:07:55.246 [main] INFO  config.Log - null
-22:07:55.247 [main] INFO  config.Log - Searching
-22:07:55.799 [main] INFO  config.Log - search Passed
-22:07:55.802 [main] INFO  config.Log - click Started
-22:07:55.803 [main] INFO  config.Log - null
-22:07:55.803 [main] INFO  config.Log - Clicking
-22:07:55.833 [main] INFO  config.Log - click Passed
-22:07:55.834 [main] INFO  config.Log - Closing browser
-22:08:02.955 [main] INFO  config.Log - =========== onFinish :-Test===============
+11:21:28.003 [main] INFO  config.Log - search Started
+11:21:28.058 [main] INFO  config.Log - null
+11:21:52.163 [main] INFO  config.Log - search Passed
+11:21:52.167 [main] INFO  config.Log - click Started
+11:21:52.167 [main] INFO  config.Log - null
+11:21:54.074 [main] INFO  config.Log - click Passed
+11:22:46.853 [main] INFO  config.Log - =========== onFinish :-Test===============
