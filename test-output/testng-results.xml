@@ -1,57 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results skipped="0" failed="1" ignored="0" total="5" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="104916" started-at="2021-08-27T16:36:13Z" finished-at="2021-08-27T16:37:58Z">
+  <suite name="Suite" duration-ms="169407" started-at="2021-08-28T06:18:16Z" finished-at="2021-08-28T06:21:05Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="104916" started-at="2021-08-27T16:36:13Z" finished-at="2021-08-27T16:37:58Z">
+    <test name="Test" duration-ms="169407" started-at="2021-08-28T06:18:16Z" finished-at="2021-08-28T06:21:05Z">
       <class name="Test.HomePageTest">
-        <test-method status="PASS" signature="set()[pri:0, instance:Test.HomePageTest@77caeb3e]" name="set" is-config="true" duration-ms="37971" started-at="2021-08-27T16:36:27Z" finished-at="2021-08-27T16:37:05Z">
+        <test-method status="PASS" signature="set()[pri:0, instance:Test.HomePageTest@77caeb3e]" name="set" is-config="true" duration-ms="95013" started-at="2021-08-28T06:18:21Z" finished-at="2021-08-28T06:19:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- set -->
-        <test-method status="PASS" signature="openUrl()[pri:0, instance:Test.HomePageTest@77caeb3e]" name="openUrl" duration-ms="4555" started-at="2021-08-27T16:37:05Z" finished-at="2021-08-27T16:37:10Z">
+        <test-method status="PASS" signature="openUrl()[pri:0, instance:Test.HomePageTest@77caeb3e]" name="openUrl" duration-ms="5871" started-at="2021-08-28T06:19:57Z" finished-at="2021-08-28T06:20:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openUrl -->
-        <test-method status="PASS" signature="validateTitle()[pri:0, instance:Test.HomePageTest@77caeb3e]" name="validateTitle" duration-ms="1589" started-at="2021-08-27T16:37:10Z" finished-at="2021-08-27T16:37:12Z">
+        <test-method status="FAIL" signature="validateTitle()[pri:0, instance:Test.HomePageTest@77caeb3e]" name="validateTitle" duration-ms="73" started-at="2021-08-28T06:20:03Z" finished-at="2021-08-28T06:20:03Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Googlemm] but found [Google]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Googlemm] but found [Google]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at Test.HomePageTest.validateTitle(HomePageTest.java:36)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateTitle -->
-        <test-method status="PASS" signature="close()[pri:0, instance:Test.HomePageTest@77caeb3e]" name="close" is-config="true" duration-ms="1453" started-at="2021-08-27T16:37:12Z" finished-at="2021-08-27T16:37:13Z">
+        <test-method status="PASS" signature="close()[pri:0, instance:Test.HomePageTest@77caeb3e]" name="close" is-config="true" duration-ms="2185" started-at="2021-08-28T06:20:04Z" finished-at="2021-08-28T06:20:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
       </class> <!-- Test.HomePageTest -->
       <class name="Test.ClickAndSearchTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:Test.ClickAndSearchTest@42d80b78]" name="init" is-config="true" duration-ms="20895" started-at="2021-08-27T16:37:34Z" finished-at="2021-08-27T16:37:55Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:Test.ClickAndSearchTest@42d80b78]" name="init" is-config="true" duration-ms="25632" started-at="2021-08-28T06:20:32Z" finished-at="2021-08-28T06:20:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="search()[pri:1, instance:Test.ClickAndSearchTest@42d80b78]" name="search" duration-ms="559" started-at="2021-08-27T16:37:55Z" finished-at="2021-08-27T16:37:55Z">
+        <test-method status="PASS" signature="search()[pri:1, instance:Test.ClickAndSearchTest@42d80b78]" name="search" duration-ms="1369" started-at="2021-08-28T06:20:58Z" finished-at="2021-08-28T06:20:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- search -->
-        <test-method status="PASS" signature="click()[pri:2, instance:Test.ClickAndSearchTest@42d80b78]" name="click" duration-ms="30" started-at="2021-08-27T16:37:55Z" finished-at="2021-08-27T16:37:55Z">
+        <test-method status="PASS" signature="click()[pri:2, instance:Test.ClickAndSearchTest@42d80b78]" name="click" duration-ms="35" started-at="2021-08-28T06:20:59Z" finished-at="2021-08-28T06:20:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- click -->
-        <test-method status="PASS" signature="close()[pri:0, instance:Test.ClickAndSearchTest@42d80b78]" name="close" is-config="true" duration-ms="2565" started-at="2021-08-27T16:37:55Z" finished-at="2021-08-27T16:37:58Z">
+        <test-method status="PASS" signature="close()[pri:0, instance:Test.ClickAndSearchTest@42d80b78]" name="close" is-config="true" duration-ms="5824" started-at="2021-08-28T06:20:59Z" finished-at="2021-08-28T06:21:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
       </class> <!-- Test.ClickAndSearchTest -->
       <class name="Test.GetQueryTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:Test.GetQueryTest@1e88b3c]" name="setup" is-config="true" duration-ms="19268" started-at="2021-08-27T16:37:13Z" finished-at="2021-08-27T16:37:32Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:Test.GetQueryTest@1e88b3c]" name="setup" is-config="true" duration-ms="24066" started-at="2021-08-28T06:20:06Z" finished-at="2021-08-28T06:20:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="ClickOnButton()[pri:0, instance:Test.GetQueryTest@1e88b3c]" name="ClickOnButton" duration-ms="36" started-at="2021-08-27T16:37:32Z" finished-at="2021-08-27T16:37:32Z">
+        <test-method status="PASS" signature="ClickOnButton()[pri:0, instance:Test.GetQueryTest@1e88b3c]" name="ClickOnButton" duration-ms="296" started-at="2021-08-28T06:20:30Z" finished-at="2021-08-28T06:20:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ClickOnButton -->
-        <test-method status="PASS" signature="close()[pri:0, instance:Test.GetQueryTest@1e88b3c]" name="close" is-config="true" duration-ms="1343" started-at="2021-08-27T16:37:32Z" finished-at="2021-08-27T16:37:34Z">
+        <test-method status="PASS" signature="close()[pri:0, instance:Test.GetQueryTest@1e88b3c]" name="close" is-config="true" duration-ms="1737" started-at="2021-08-28T06:20:31Z" finished-at="2021-08-28T06:20:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->

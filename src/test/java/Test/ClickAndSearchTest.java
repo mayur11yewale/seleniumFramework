@@ -18,7 +18,7 @@ public class ClickAndSearchTest extends TestBase{
 	public void init()
 	{
 		initializeDriver();
-		Log.info("Driver is initialzed");
+		//Log.info("Driver is initialzed in");
 		driver.get("https://www.google.com");
 		home=new HomePage();
 		login = new LoginPage();
@@ -27,21 +27,21 @@ public class ClickAndSearchTest extends TestBase{
 	@Test(priority=1)
 	public void search()
 	{
-		Log.info("Searching");		
+		//Log.info("Searching");		
 		login.search("quora");
 	}
 	
 	@Test(priority=2)
 	public void click()
 	{
-		Log.info("Clicking");
+		//Log.info("Clicking");
 		home.ClickOnButton();
 	}
 	
 	@AfterClass
 	public void close()
 	{
-		Log.info("Closing browser");
+		//Log.info("Closing browser");
 		driver.quit();
 	}
 	

@@ -1,0 +1,9 @@
+11:18:54.101 [main] INFO  config.Log - openUrl Started
+11:18:54.214 [main] INFO  config.Log - null
+11:18:55.747 [main] INFO  config.Log - openUrl Passed
+11:18:55.754 [main] INFO  config.Log - validateTitle Started
+11:18:55.755 [main] INFO  config.Log - null
+11:18:55.859 [main] INFO  config.Log - Failed because of - java.lang.AssertionError: expected [Googlemm] but found [Google]
+11:20:23.558 [main] INFO  config.Log - ClickOnButton Started
+11:20:23.559 [main] INFO  config.Log - null
+11:20:23.941 [main] INFO  config.Log - ClickOnButton Passed

@@ -6,13 +6,13 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Test.GetQueryTest">
+      <class name="Test.HomePageTest">
         <methods>
-          <include name="setup"/>
+          <include name="set"/>
+          <include name="validateTitle"/>
           <include name="close"/>
-          <include name="ClickOnButton"/>
         </methods>
-      </class> <!-- Test.GetQueryTest -->
+      </class> <!-- Test.HomePageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

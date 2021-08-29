@@ -1,0 +1,34 @@
+11:34:45.391 [main] INFO  - =========== onStart :-Test===============
+11:38:02.039 [main] INFO  - openUrl Started
+11:38:02.056 [main] INFO  - null
+11:38:02.919 [main] INFO  - openUrl Passed
+11:38:02.923 [main] INFO  - validateTitle Started
+11:38:02.924 [main] INFO  - null
+11:38:03.041 [main] INFO  - Failed because of - java.lang.AssertionError: expected [Googlemm] but found [Google]
+11:39:19.789 [main] INFO  - ClickOnButton Started
+11:39:19.790 [main] INFO  - null
+11:39:23.301 [main] INFO  - ClickOnButton Passed
+11:40:11.628 [main] INFO  - search Started
+11:40:11.628 [main] INFO  - null
+11:40:13.157 [main] INFO  - search Passed
+11:40:13.161 [main] INFO  - click Started
+11:40:13.161 [main] INFO  - null
+11:40:13.191 [main] INFO  - click Passed
+11:40:19.647 [main] INFO  - =========== onFinish :-Test===============
+11:41:34.105 [main] INFO  - =========== onStart :-Test===============
+11:42:35.499 [main] INFO  - openUrl Started
+11:42:35.500 [main] INFO  - null
+11:42:37.754 [main] INFO  - openUrl Passed
+11:42:37.759 [main] INFO  - validateTitle Started
+11:42:37.759 [main] INFO  - null
+11:42:37.951 [main] INFO  - Failed because of - java.lang.AssertionError: expected [Googlemm] but found [Google]
+11:43:23.722 [main] INFO  - ClickOnButton Started
+11:43:23.723 [main] INFO  - null
+11:43:24.029 [main] INFO  - ClickOnButton Passed
+11:44:07.342 [main] INFO  - search Started
+11:44:07.343 [main] INFO  - null
+11:44:08.394 [main] INFO  - search Passed
+11:44:08.397 [main] INFO  - click Started
+11:44:08.398 [main] INFO  - null
+11:44:08.430 [main] INFO  - click Passed
+11:44:16.270 [main] INFO  - =========== onFinish :-Test===============

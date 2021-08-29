@@ -12,13 +12,18 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
 public class TestBase {
 
 	public static WebDriver driver;
+	public static ChromeOptions option;
+	public static FirefoxOptions optionFire;
+	
 	public WebDriver initializeDriver()
 	{
 		
@@ -51,6 +56,58 @@ public class TestBase {
 		else if(browser.equalsIgnoreCase("internetexplorer"))
 		{
 			driver=new InternetExplorerDriver();
+		}
+		else
+		{
+			System.out.print("Driver not found");
+		}
+		
+		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		return driver;
+	}
+	
+	public WebDriver headlessInitializeDriver()
+	{
+		
+		Properties prop = new Properties();
+		try {
+			FileInputStream fis=new FileInputStream("C:\\Users\\samurai\\workspace\\SeleniumFrameworkFinal\\src\\main\\java\\config\\config.properties");
+			prop.load(fis);
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		String browser=prop.getProperty("browser");
+		if(browser.equalsIgnoreCase("chrome"))
+		{
+			System.setProperty("webdriver.chrome.driver","C:\\Users\\samurai\\Desktop\\selenium\\chromedriver.exe");
+			option = new ChromeOptions();
+			option.setHeadless(true);
+			driver=new ChromeDriver(option);
+		}
+		else if(browser.equalsIgnoreCase("firefox"))
+		{
+			optionFire = new FirefoxOptions();
+			optionFire.setHeadless(true);
+			driver=new FirefoxDriver(option);
+		}
+		else if(browser.equalsIgnoreCase("safari"))
+		{
+			driver=new SafariDriver();
+		}
+		else if(browser.equalsIgnoreCase("internetexplorer"))
+		{
+			driver=new InternetExplorerDriver();
+		}
+		else if(browser.equalsIgnoreCase("htmlunitdriver"))
+		{
+			
 		}
 		else
 		{

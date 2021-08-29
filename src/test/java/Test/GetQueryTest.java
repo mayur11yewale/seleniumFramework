@@ -16,7 +16,7 @@ public class GetQueryTest extends TestBase{
 	public void setup()
 	{
 		initializeDriver();
-		Log.info("Driver is initializing");
+		//Log.info("Driver is initializing");
 		driver.get("https://www.google.com");
 		home=new HomePage();
 	}
@@ -24,14 +24,14 @@ public class GetQueryTest extends TestBase{
 	@Test
 	public void ClickOnButton()
 	{
-		Log.info("Clicking");
+		//Log.info("Clicking");
 		home.ClickOnButton();
 	}
 	
 	@AfterClass
 	public void close()
 	{
-		Log.info("Driver is close");
+		//Log.info("Driver is close");
 		driver.quit();
 	}
 }
