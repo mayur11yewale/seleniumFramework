@@ -9,10 +9,10 @@ public class JavaScriptExecutorCommonMethods extends TestBase{
 	
 	JavascriptExecutor js;
 	
-	public void setup(String id)
+	public void setup()
 	{
 		initializeDriver();
-		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js = (JavascriptExecutor) driver;
 	}
 	
 	public WebElement getElementById(String id)
