@@ -13,13 +13,15 @@
 	
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+ 	<maven.compiler.source>1.6</maven.compiler.source>
+  	<maven.compiler.target>1.6</maven.compiler.target>
   </properties>
 
   <build>
   	  <resources>
   	  	<resource>
   	  		<directory>src/main/java/resources</directory>
-  	 		<filtering>true</filtering>
+  	 		
   	  	</resource>
   	  </resources>
   	<plugins>
@@ -32,7 +34,16 @@
 			            <suiteXmlFile>testng.xml</suiteXmlFile>
 			          </suiteXmlFiles>
 			      </configuration>
+
+		          <dependencies>
+		            <dependency>
+		                <groupId>org.apache.maven.shared</groupId>
+		                <artifactId>maven-filtering</artifactId>
+		                <version>1.3</version>
+		            </dependency>
+		          </dependencies>
 		        </plugin>
+		        
 		      </plugins>
   </build>
   <dependencies>
@@ -47,7 +58,6 @@
 	    <groupId>org.testng</groupId>
 	    <artifactId>testng</artifactId>
 	    <version>6.14.3</version>
-	    <scope>test</scope>
 	</dependency>	
 	<dependency>
 	    <groupId>org.apache.logging.log4j</groupId>
