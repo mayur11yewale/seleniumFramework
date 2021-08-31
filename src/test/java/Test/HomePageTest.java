@@ -33,7 +33,7 @@ public class HomePageTest extends TestBase{
 	@Test()
 	public void validateTitle()
 	{
-		Assert.assertEquals(login.title(), "Googlemm");
+		Assert.assertEquals(login.title(), "Google");
 	}
 	
 	/*@Test(priority=2,dataProvider="data",dataProviderClass=SearchData.class)
