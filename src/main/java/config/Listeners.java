@@ -21,7 +21,7 @@ public class Listeners extends TestBase implements ITestListener{
 	public void onFinish(ITestContext arg0) {
 		// TODO Auto-generated method stub
 		ExtentTestManager.endTest();
-		ExtentManager.getInstance().flush();
+		//ExtentManager.getInstance().flush();
 		Log.info("=========== onFinish :-" + arg0.getName() + "===============");
 		
 		//extent.flush();

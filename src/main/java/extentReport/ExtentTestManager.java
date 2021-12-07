@@ -15,13 +15,13 @@ public class ExtentTestManager {
 		return (ExtentTest) extentTestMap.get((int) (long) (Thread.currentThread().getId()));
 	}
 
-	public static synchronized void endTest() {
-		extent.flush();
-	}
-
 	public static synchronized ExtentTest startTest(String testName) {
 		ExtentTest test = extent.createTest(testName);
 		extentTestMap.put((int) (long) (Thread.currentThread().getId()), test);
 		return test;
+	}
+	
+	public static synchronized void endTest() {
+		extent.flush();
 	}
 }
